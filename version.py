@@ -7,16 +7,24 @@
 # Is the version and init data for the program
 #=================================================
 
-VERSION = "4.0"
+# ================ Make File Variables =================
+# Do not change
+
+VERSION = "4.1"
 GIT_URL = 'https://raw.githubusercontent.com/Github-Taha/MakeFile/main/version.py'
-DEFAULT_NAME = "Taha Amir"
-TAB = "    "
-ASSIGNMENT = "Assignments"
-UNIT = "Unit "
-PRACTICE_PROGRAMS = "Practice Programs "
 FILES = [
     "main.py",
     "mylib.py",
     "update_manager.py",
     "version.py"
 ]
+# ======================================================
+
+# =================== User Variables ===================
+# Change these variable to your liking.
+DEFAULT_NAME = "Taha Amir"
+TAB = "    "
+ASSIGNMENT = "Assignments"
+UNIT = "Unit "
+PRACTICE_PROGRAMS = "Practice Programs "
+# ======================================================
