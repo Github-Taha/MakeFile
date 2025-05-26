@@ -1,5 +1,5 @@
 #=================================================
-# ------------------- Make File ------------------
+# --------------------- Main ---------------------
 #
 # Taha Amir
 # Tuesday, May 13, 2025
@@ -13,17 +13,12 @@ import sys
 import os
 import datetime
 import re
-import urllib.request
 
 # Import Custom Libraries
 import version
 import mylib
 
-# Check for updates
-import update_manager
-mylib.pressEnter()
-
-print("\n" * 30)
+print("\n" * 40)
 
 # Initialization
 filePath = "../"
