@@ -11,6 +11,14 @@
 # Check for updates
 import update_manager
 import urllib.request
+import os
+
+def start_main():
+    # Start the program
+    if "version2.py" in os.listdir():
+        os.remove("version2.py")
+    input("\n\nPress [Enter] to continue...")
+    import main
 
 if update_manager.update_needed:
     print("Updating...")
@@ -39,9 +47,7 @@ if update_manager.update_needed:
             print("\n")
             print("Update Completed Successfully!")
 
-            # Start the program
-            input("\n\nPress [Enter] to continue...")
-            import main
+            start_main()
 
         else:
             print("\n")
@@ -49,10 +55,6 @@ if update_manager.update_needed:
     except AttributeError:
         print("Programming Error. Starting program.")
 
-        # Start the program
-        input("\n\nPress [Enter] to continue...")
-        import main
+        start_main()
 else:
-    # Start the program
-    input("\n\nPress [Enter] to continue...")
-    import main
+    start_main()
