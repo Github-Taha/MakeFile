@@ -53,6 +53,3 @@ else:
     os.remove("version2.py")
 
 print()
-mylib.pressEnter()
-
-
