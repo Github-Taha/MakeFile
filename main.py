@@ -7,9 +7,6 @@
 # Make a new file
 #=================================================
 
-# Import the Import Manager
-# import import_manager
-
 # Import Libraries
 import subprocess
 import sys
@@ -24,8 +21,8 @@ import mylib
 # Initialization
 filePath = "../"
 date = datetime.datetime.now()
-defaultName = "Taha Amir"
-tab = "    "
+defaultName = version.DEFAULT_NAME
+tab = version.TAB
 
 # Intro
 mylib.showTitle("File Initializer v4.0", False, 50)
@@ -35,7 +32,7 @@ print()
 unit = mylib.validVal("Enter Unit: ", "You must enter a value from 1 to 8.", 1, 8)
 print()
 
-filePath += ("Unit {}".format(unit))
+filePath += version.UNIT + str(unit)
 
 # Assignment or Practice Programs
 print("Where do you want to put it? \n")
@@ -50,11 +47,11 @@ print()
 
 # Update FilePath
 if place == 1:
-    filePath += "/Assignments"
+    filePath += "/" + version.ASSIGNMENT
 elif place == 2:
     ppn = mylib.validVal("Enter Practice Program Number: ", "You must enter a number.", 1, 10)
 
-    filePath += "/Practice_Programs_{}".format(ppn)
+    filePath += "/" + version.PRACTICE_PROGRAMS + str(ppn)
 elif place == 3:
     pass
 elif place == 4:
