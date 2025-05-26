@@ -14,3 +14,9 @@ TAB = "    "
 ASSIGNMENT = "Assignments"
 UNIT = "Unit "
 PRACTICE_PROGRAMS = "Practice Programs "
+FILES = [
+    "main.py",
+    "mylib.py",
+    "update_manager.py",
+    "version.py"
+]
