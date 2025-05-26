@@ -13,10 +13,17 @@ import sys
 import os
 import datetime
 import re
+import urllib.request
 
 # Import Custom Libraries
 import version
 import mylib
+
+# Check for updates
+import update_manager
+mylib.pressEnter()
+
+print("\n" * 30)
 
 # Initialization
 filePath = "../"
